@@ -15,4 +15,5 @@ This messaging app can easily be integrated into your existing projects to enabl
 - MySQL (for storing messages and contacts)
 - HTML/CSS/JavaScript
 
-[!NOTE]
+> [!NOTE]
+> The ```log.sql``` file shows how the database and its tables structure should be. Take note there are Two databases in the ```db.php``` file, the main database should only contain users table, and to the second database, you should not make any tables the php code will automatically make table
