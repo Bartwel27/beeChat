@@ -14,3 +14,5 @@ This messaging app can easily be integrated into your existing projects to enabl
 - PHP
 - MySQL (for storing messages and contacts)
 - HTML/CSS/JavaScript
+
+[!NOTE]
