@@ -1,0 +1,243 @@
+<!--
+<?php
+ require '../../login/login.php';
+ 
+ 
+ 
+ email_parent = '';
+ email_user = '';
+ 
+ username_parent = '';
+ username_user = '';
+ 
+ userid_parent = '';
+ userid_user = '';
+ 
+ if (
+ !_SESSION['username'] == username_parent &&
+ !_SESSION['email'] == email_parent ||
+ !_SESSION['username'] == username_user &&
+ !_SESSION['email'] == email_user 
+ ) {
+  _http_res(0,'');
+ }
+ 
+?>
+-->
+<html>
+	<head>
+		<title>App</title>
+		 <meta charset='utf-8' />
+		 <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		 <meta name='theme-color' content='default' />
+		 <meta name='description' content='' />
+		 <meta name='keywords' content='' />
+		 
+		 <link rel='stylesheet' href='css/' />
+		 <link rel='stylesheet' href='css/' />
+		 <script src='../../assets/js/jQuery.js'></script>
+	</head>
+	<body>
+		 <!--container-->
+		 <div class='container'>
+		   
+		    <!-- head -->
+		    <style>
+		    body{
+		     width:100%;
+		     max-width:800px;
+		     margin:0 auto;
+		     padding:0px;
+		     position:relative;
+		    }
+		      .head {
+		      width:100%;
+		      max-width:800px;
+		      margin:0 auto;
+		      background:#E7EEF6;
+		      height:;
+		      display:;
+		      justify-content:space-between;
+		      position:sticky;
+		      top:0;
+		      }
+		      
+		      .head .search-lettle{
+		      width:100%;
+		      max-width:300px;
+		      height:50px;
+		      border:0px solid grey;
+		      display:flex;
+		      padding:10px 0px 10px 0px;
+		      margin-left:10px;
+		      }.head .search-lettle button{
+		      background:none;
+		      border:0px;
+		      margin-top:5px;
+		      }.head .search-lettle #n{
+		      width: 40px;
+		      height:40px;
+		      border-radius:20px;
+		      border:0px;
+		      font-weight:bold;
+		      background: #8A6E63;
+		      color:white;
+		      font-size:20px;
+		      }.head .search-lettle p{
+		        width:250px;
+		        padding:0px;
+		        margin:0px;
+		        border:0px solid red;
+		        height:30px;
+		        margin-top:15px;
+		        margin-left:10px;
+		      }
+		      
+		    </style>
+		    <div class='head'>
+		      
+		      <!-- search-lettle -->
+		      <div class='search-lettle'>	      
+		      <button id='n'>
+		       N
+		      </button>
+		      <p>Naomi mwanga</p>
+		      </div>
+		      <!-- search-lettle -->
+		      
+		    </div>
+		    <!-- head -->		   
+		   
+		  <!-- mymsg-box -->
+		  <div class='mymsg-box'>
+		  
+		   <!-- mymsg -->
+		   <style>
+		   .mymsg-box{
+		     width:100%;
+		     max-width:800px;
+		     margin:0 auto;
+		   }.mymsg-box .mymsg{
+		     width:100%;
+		     max-width:400px;
+		     margin:0 auto;
+		     display:flex;
+		     border-bottom:0px solid grey;
+		     margin-top:20px;
+		   }.mymsg-box .mymsg button{
+		     width:30px;
+		     height:30px;
+		     border-radius:15px;
+		     border:0px;
+		     margin-left:5px;
+		     font-weight:bold;
+		     background:linear-gradient(to right, #C8D4E0, #ACB6BF);
+		     color:white;
+		   }.mymsg-box .mymsg p{
+		    width:300px;
+		    padding:0px;
+		    margin:0px 0px 0px 10px;
+		    border:0px solid red;
+		   }.mymsg-box .mymsg p b{
+		    font-size:16px;
+		    display:block;
+		    margin-bottom:5px;
+		   }.mymsg-box .mymsg p span{
+		    display:block;
+		    font-size:15px;
+		   }
+		   </style>
+		   <div class='mymsg'>
+		     <button>
+		      N
+		     </button>
+		     <p>
+		      <b>Naomi mwanga</b>
+		      <span>
+		       hello how are you man its been bels, amd howbis school amd everything, okay like today lets just talk we keep each other updated
+		      </span>
+		     </p>
+		   </div>
+		   <!-- mymsg -->
+		   
+		  </div>
+		  <!-- mymsg-box -->
+		   
+		   <!-- msg -->
+		   <style>
+		    .msg{
+		      width:100%;
+		      max-width:400px;
+		      margin:0 auto;
+		      position:fixed;
+		      bottom:0;
+		      left:0;
+		      right:0;
+		      background:white;
+		      height:60px;
+		      border:01px solid #eee;
+		    }.msg form{
+		      border:0px solid red;
+		      display:flex;
+		      margin-top:10px;
+		    }.msg form textarea{
+		      width:350px;
+		      height:40px;
+		      outline:none;
+		      border:0px;
+		      background:white;
+		      resize:none;
+		    }.msg form button{
+		      width:50px;
+		      height:40px;
+		      border:0px;
+		      background:white;
+		      font-weight:bold;
+		    }
+		   </style>
+		   <div class='msg'>
+		     <form>
+		       <textarea id='msg' type='text' name='message' placeholder='type...' required></textarea>
+		       <button id='send' type='button'>
+		        <svg width='24' height='24' viewBox='0 0 24 24'><path fill='#222' d='m20.34 9.32l-14-7a3 3 0 0 0-4.08 3.9l2.4 5.37a1.06 1.06 0 0 1 0 .82l-2.4 5.37A3 3 0 0 0 5 22a3.14 3.14 0 0 0 1.35-.32l14-7a3 3 0 0 0 0-5.36Zm-.89 3.57l-14 7a1 1 0 0 1-1.35-1.3l2.39-5.37a2 2 0 0 0 .08-.22h6.89a1 1 0 0 0 0-2H6.57a2 2 0 0 0-.08-.22L4.1 5.41a1 1 0 0 1 1.35-1.3l14 7a1 1 0 0 1 0 1.78Z'/></svg>
+		       </button>
+		     </form>
+		   </div>
+		   <!-- msg -->
+		   
+		   
+<script>
+  let msg = document.querySelector('#msg');
+  $(document).ready(function(){
+   $('#send_btn').click(function(){
+        let parentemail = '';
+        let parentusername = '';
+        let parentuserid = '';
+       
+        let receiveremail = '';
+        let receiverusername = '';
+        let receiveruserid = '';
+        msg = msg.value;
+     $('.mymsg-box').load('../load-message.php',{
+       msg:msg,
+       parentemail:parentemail,
+       parentusername:parentusername,
+       parentuserid:parentuserid,
+       receiveremail:receiveremail,
+       receiverusername:receiverusername,
+       receiveruserid:receiveruserid
+     });
+   });
+  });
+</script>
+		   
+		   
+		 </div>
+		 <!--container-->
+
+	</body>
+	
+	<script scr=''></script>
+	<script src=''></script>
+	
+</html>

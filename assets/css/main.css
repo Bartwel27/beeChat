@@ -1,0 +1,125 @@
+body {
+       width:100%;
+       max-width:800px;
+       margin:0 auto;
+       font-family:sans-serif;
+       position:relative;
+      }
+      .container {
+        width:100%;
+        max-width:800px;
+        margin:0 auto;
+        
+      }
+      
+      .header {
+        width:100%;
+        max-width:800px;
+        margin:0 auto;
+        background:#E7EEF6;
+        height:70px;
+        display:flex;
+        justify-content:space-between;
+        position:sticky;
+        top:0;
+      }.header .head-svg {
+        border:0px solid grey;
+        width:100%;
+        max-width:250px;
+        display:flex;
+      }.header .head-svg button{
+        background:none;
+        border:0px;
+        margin-left:10px;
+      }.header .head-svg h1{
+        display:flex;
+        margin:0px;
+        padding:0px;
+        margin-top:25px;
+        margin-left:10px;
+        font-size:20px;
+        font-weight:300;
+      }
+      
+      .header .search-lettle{
+        border:0px solid grey;
+        width:100%;
+        max-width:100px;
+        display:flex;
+        justify-content:space-around;
+      }.header .search-lettle a{
+        text-decoration:none;
+      }.header .search-lettle a button{
+        background:none;
+        border:0px;
+        margin-top:25px;
+      }.header .search-lettle #n{
+        width: 40px;
+        height:40px;
+        border-radius:20px;
+        border:0px;
+        font-weight:bold;
+        background: #8A6E63;
+        color:white;
+        font-size:20px;
+        margin-top:15px;
+      }
+      
+      
+      
+      
+
+.add-float-button{
+        width:50px;
+        height:50px;
+        border-radius:25px;
+        border:0px solid grey;
+        box-shadow: 2px 2px 2px grey;
+        position:fixed;
+        bottom:20;
+        right:20;
+        display:;
+        
+}.add-float-button button{
+         width:100%;
+         height:100%;
+         border:0px;
+         border-radius:25px;
+ }
+
+
+.add-float-container{
+        width:200px;
+        height:200px;
+        box-shadow:0px 0px 100px silver;
+        padding:20px;
+        position:fixed;
+        right:50;
+        left:50;
+        top:100;
+        bottom:100;
+        transission:0.5;
+        background:white;
+        border-radius:10px;
+        display:none;
+      }.add-float-container form {
+        border:0px solid grey;
+        height:100px;
+      }.add-float-container form input{
+        height:40px;
+        outline:none;
+        background:none;
+        border:0px;
+        box-shadow: 0px 0px 3px grey;
+        border-radius:3px;
+        display:block;
+        margin-bottom:10px;
+      }.add-float-container form button{
+        width:90px;
+        height:35px;
+        background:#222;
+        border:1px solid grey;
+        color:white;
+        font-weight:bold;
+        border-radius:3px;
+      }
